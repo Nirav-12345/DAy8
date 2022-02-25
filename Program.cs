@@ -1,18 +1,14 @@
 ﻿using System;
 
-namespace EUC5Ops;
+namespace CartesionUC1;
 
-class Program
+class program
 {
     public static void Main(string[] args)
 
     {
 
-
-
-        U5C l = new U5C();
-
-        l.eUC5(1, 2, 20, 20,0);
-
+        UC1Line j = new UC1Line();
+        j.comp(1,2,3,4);
     }
 }
