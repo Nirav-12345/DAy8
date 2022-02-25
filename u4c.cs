@@ -4,47 +4,86 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmpUC4Ops
+namespace EUC5Ops
 {
-    public class u4c
+    public class U5C
     {
         public static int PartTime;
+
         public static int FullTime;
-        public static int WageHour;
 
-        public static int Emphrs;
+        public static int Wagehour;
 
-        public  void EU4c(int PartTime,int FullTime,int WageHour,int Emphrs)
-        {
+        public static int workingDays;
 
-            int PartTime1=PartTime;
+        public static int emphrs;
 
-            int FullTime2 = FullTime;
-            int WageHour3 = WageHour;
 
-            int Emphrs4 = Emphrs;
+        
 
-             Random random = new Random();
-            int num = random.Next(3);
+
+
+public void eUC5(int PartTime, int FullTime, int Wagehour, int workingDays, int emphrs)
+
+
+
             
-            switch (num)
+
+
+       
+        {
+            
+
+
+
+
+
+            int totalsalary = 0;
+
+
+            for (int day = 1; day <= workingDays; day++)
             {
-                case 1:
-                    Emphrs4 = 4;
-                    break;
 
-                case 2:
-                    Emphrs4 = 8;
-                    break;
+                Random random = new Random();
+                int num = random.Next(3);
 
-                default:
-                    Emphrs4 = 0;
-                    break;
+
+                switch (num)
+                {
+                    case 1:
+                        emphrs = 4;
+                        break;
+
+
+                    case 2:
+                        emphrs = 8;
+                        break;
+
+                    default:
+
+                        emphrs = 0;
+                        break;
+
+
+
+
+
+                }
+
+                int salary = (emphrs * Wagehour);
+
+                 totalsalary = (salary + totalsalary);
+
+                Console.WriteLine("Total Salary" + totalsalary);
+
             }
 
-            int Cal = WageHour3 * Emphrs4;
 
-            Console.WriteLine("Per dayage" + Cal);
+
+
+
+
+
 
 
         }
