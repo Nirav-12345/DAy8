@@ -1,13 +1,14 @@
 ﻿using System;
 
-namespace LineComparOops;
+namespace LineCompUC2;
 
 class Program
 {
     public static void Main(string[] args)
-    {
-        Compare g = new Compare();
 
-        g.Uu();
+    {
+        CompUC2 j = new CompUC2();
+
+        j.UC2();
     }
 }
