@@ -1,14 +1,13 @@
 ﻿using System;
 
-namespace CartesionUC1;
+namespace LineComparOops;
 
-class program
+class Program
 {
     public static void Main(string[] args)
-
     {
+        Compare g = new Compare();
 
-        UC1Line j = new UC1Line();
-        j.comp(1,2,3,4);
+        g.Uu();
     }
 }
